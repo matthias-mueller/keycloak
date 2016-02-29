@@ -3,9 +3,12 @@
 ## Steps
 
 1. Replace configuration files
+```
+cp standalone.xml /usr/local/keycloak/standalone/configuration/
+cp standalone-ha.xml /usr/local/keycloak/standalone/configuration/
+```
 
 2. Add postgres driver
-
 ```
 mkdir -p /usr/local/keycloak/modules/system/layers/base/org/postgresql/jdbc/main
 cd /usr/local/keycloak/modules/system/layers/base/org/postgresql/jdbc/main
